@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Contact Page</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      padding: 10px;
+      margin: 0;
+    }
+
+    /* Navigation links */
+    nav {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: purple;
+      font-size: 1.1rem;
+    }
+
+    .form-container {
+      max-width: 700px;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #aaa;
+      border-radius: 5px;
+    }
+
+    h2 {
+      border-bottom: 2px solid #333;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+      font-size: 1.5rem;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .form-group input,
+    .form-group select {
+      padding: 8px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    /* Desktop layout for wider screens */
+    @media (min-width: 600px) {
+      .form-group {
+        flex-direction: row;
+        align-items: center;
+      }
+
+      .form-group label {
+        width: 150px;
+        margin-bottom: 0;
+      }
+
+      .form-group input,
+      .form-group select {
+        flex: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Links -->
+  <nav>
+    <a href="#">Home Page</a>
+    <a href="#">About</a>
+    <a href="#">Skills</a>
+    <a href="#">Projects</a>
+    <a href="#">Resume</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <!-- Contact Form -->
+  <div class="form-container">
+    <h2>Contact Information</h2>
+
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+    </div>
+
+    <div class="form-group">
+      <label for="mobile">Mobile:</label>
+      <input type="tel" id="mobile" name="mobile">
+    </div>
+
+    <div class="form-group">
+      <label for="number">Number:</label>
+      <input type="number" id="number" name="number">
+    </div>
+
+    <div class="form-group">
+      <label for="topic">Select Topic:</label>
+      <select id="topic" name="topic">
+        <option value="java">Java</option>
+        <option value="python">Python</option>
+        <option value="c++">C++</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="course">Choose a Course:</label>
+      <select id="course" name="course">
+        <option value="web">Web</option>
+        <option value="ai">AI</option>
+        <option value="ml">ML</option>
+      </select>
+    </div>
+  </div>
+
+</body>
+</html>
