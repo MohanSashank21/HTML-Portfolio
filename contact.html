@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "description" content = "Get in touch with Mohan Sashank for opputunities, suggestions"/>
+    <meta name = "keywords" content = "Mohan Sashank contact details,FAANG developer contact details"/>
+    <meta name = "author" content = "Mohan Sashank"/>
+    <meta name = "robots" content = "index,follow"/>
+    <link rel = "icon" href= "icon.png"/>
+    <title>contact</title>
+</head>
+<body>
+    <header>
+            <a href="index.html" target="_blank" rel="noopener,noreferrer">Home Page</a>
+            <a href="about.html" target="blank" rel = "noopener,noreferrer">About</a>
+            <a href = "skills.html" target="_blank" rel="noopener,noreferrer">Skills</a>
+            <a href ="projects.html" target ="_blank" rel="noopener,noreferrer">Projects</a>
+            <a href = "resume.html">Resume</a>
+            <a href ="contact.html" target = "_blank" rel="noopener,noreferrer">Contact</a>
+    </header>
+    <form action="submit" Method="post" target="self">
+        <fieldset>
+            <legend>contact information</legend>
+            <label for="name">Name:</label>
+            <input type ="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mobile number">Mobile Number:</label>
+            <input type="number" id ="mobile number" name = "mobile number" required>
+             </fieldset>
+            <label for="topic"> Select Topic</label>
+            <select id = "topic" name="topic">
+                <optgroup label="Languages">
+                    <option value="C">C</option>
+                    <option value="Java">Java</option>
+                    <option value="C++">C++</option>
+                    <option value="HTML">HTML</option>
+                </optgroup>
+                <optgroup label="Technologies">
+                    <option value="Web Development">Web Development</option>
+                    <option value="Artificial Intelligence">Artificial Intelligence</option>
+                    <option value="Cloud">Cloud</option>
+                </optgroup>
+            </select>
+            <label for="course" >Choose a Course:</label>
+            <input list="courses" id = "course" name="courses offered">
+            <datalist id="courses">
+                <option value="Web">Web</option>
+                <option value="DSA">DSA</option>
+            </datalist>
+       
+    </form>
+</body>
+</html>
